@@ -2,12 +2,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-
 def helloworld():
     return render_template("hello_world.html")
 
 @app.route("/projects")
-
 def projects():
     return render_template("projects.html")
 
